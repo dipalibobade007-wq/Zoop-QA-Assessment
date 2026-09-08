@@ -1,6 +1,6 @@
 # Zoop.one – QA Engineer Assessment
 
-Java + Selenium + TestNG + REST Assured automation for **The Internet by Herokuapp**.
+Java + Selenium + TestNG + REST Assured automation.
 
 ## What is covered
 
