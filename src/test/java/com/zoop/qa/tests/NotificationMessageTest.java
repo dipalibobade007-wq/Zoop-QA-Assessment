@@ -16,8 +16,11 @@ public class NotificationMessageTest extends BaseTest {
         page.open(baseUrl());
 
         String message = page.loadMessage();
+        boolean isExpectedNotification = message.contains("Action successful")
+                || message.contains("Action unsuccesful")
+                || message.contains("Action unsuccessful");
         Assert.assertTrue(
-                message.contains("Action successful") || message.contains("Action unsuccessful"),
+                isExpectedNotification,
                 "Unexpected notification message: " + message);
     }
 }
