@@ -1,4 +1,4 @@
-name: QA Automation
+name: Zoop QA Automation
 
 on:
   push:
@@ -6,6 +6,7 @@ on:
 
 jobs:
   test:
+    name: Run Automated Tests
     runs-on: ubuntu-latest
 
     steps:
